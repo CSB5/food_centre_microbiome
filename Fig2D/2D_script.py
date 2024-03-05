@@ -18,7 +18,8 @@ import seaborn as sns
 
 # %%
 dataset = f'./2D_dataset.joblib'
-X,Y,mddf = load(dataset) # Selected top 200 based on gmean with pseudo count added
+X,Y = load(dataset) # Selected top 200 based on gmean with pseudo count added
+# need to load mddf without coordinate data
 counts = X
 
 
